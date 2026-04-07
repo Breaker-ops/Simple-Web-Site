@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(245, 245, 245, 0.97);
+}
+
+header{
+    background-color: rgb(2, 41, 159);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Guide-FrontEnd{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.Guide-ApprenezHTML{
+    font-size: 20px;
+}
+.Front-End{
+    text-align: center;
+}
+.ApprenezHTML{
+    font-size: medium;
+    text-align: center;
+    color: orange;
+}
+.ImageComputer{
+    display: flex;
+    height: 250px;
+    width: auto;
+}
+
+.HtmlCssJavascript{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.Htmldiv{
+    color: white;
+    background-color:rgb(5, 5, 25);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.HtmlCode{
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px,
+                0px 0px 5px,
+                0px 0px 5px black;
+}
+
+.CssCode{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+li{
+    margin: 10px 0px 10px 0px;
+}
+
+.htmlPart{
+    color: white;
+    background-color: rgba(253, 64, 6, 0.972);
+    padding: 10px 60px 20px 60px;
+    margin: 0;
+    font-weight: bold;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 70%,
+        50% 100%,
+        0 70%
+    );
+}
+
+.Cssdiv{
+    background-color: #2f6feb;
+    margin: 0;
+    letter-spacing: 10px;
+}
+
+.JSdiv{
+    padding: 10px 30px 20px 30px;
+    background-color: rgb(253, 216, 2);
+    letter-spacing: 1px;
+
+}
+
+.htmlText{
+  letter-spacing: 4px;
+}
+.Projet-demonstration {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+}
+
+img{
+    max-width: 400px;
+    max-height: auto;
+}
+.VoyageAventure{
+    display: flex;
+    justify-content: center;
+}
+.imgVoyagesaventures{
+    max-width: 2000px;
+    width: 1070px;
+    height: 250px;
+}
+.voyagetext{
+    position: absolute;
+    align-self: center;
+    color:write;
+    text-shadow: 0px 2px 5px black;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.DestinationActivitesContact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.divDestinationvoyage{
+    box-shadow: 0px 10px 10px,
+                0px 10px 10px,
+                0px 10px 10px black;
+    padding-bottom: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 20px;
+}
+.Destionationdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 40px 5px 40px;
+    box-shadow: 0px 0px 5px,
+                0px 0px 5px,
+                0px 0px 5px black;
+}
+footer{
+    background-color: rgb(2, 41, 159);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
+    
+}
+.traitg{
+    border-top: 1px solid whitesmoke;
+    padding: 0px 0px 0px 300px;
+}
+.traitd{
+    border-top: 1px solid whitesmoke;
+    padding: 0px 300px 0px 0px;
+}
+.Commencez{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    background-color: rgba(253, 64, 6, 0.972);
+    border: none ;
+    box-shadow: 0px 2px 1px,
+                0px 2px 1px,
+                0px 2px 1px rgba(253, 64, 6, 0.972) ;
+}
+
+@media (max-width: 780px) {
+
+    /* --- Header --- */
+    .ImageComputer {
+        display: none;
+    }
+    .Guide-FrontEnd {
+        font-size: 25px;
+    }
+    .Guide-ApprenezHTML {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* --- Section HTML / CSS / JS --- */
+    .HtmlCssJavascript {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    .Htmldiv {
+        width: 90%;
+    }
+    .JSdiv {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* --- Projet démonstration --- */
+    .Projet-demonstration {
+        padding: 30px 20px;
+    }
+
+    /* --- Section voyage --- */
+    .divDestinationvoyage {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .imgVoyagesaventures {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .DestinationActivitesContact {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .Destionationdiv {
+        width: 80%;
+        padding: 10px 20px;
+    }
+    .htmlPart{
+      padding: 10px 86px 20px 86px;
+    }
+    .JSdiv{
+      padding: 10px 70px 20px 70px;
+    }
+
+    /* --- Footer --- */
+    .traitg,
+    .traitd {
+        padding: 0px 40px;
+    }
+    footer h1 {
+        font-size: 1.2rem;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .Commencez {
+        word-spacing: 4px;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (min-width: 781px) and (max-width: 1024px) {
+
+    .divDestinationvoyage {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .imgVoyagesaventures {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .Htmldiv {
+        width: 28%;
+    }
+    .traitg,
+    .traitd {
+        padding: 0px 100px;
+    }
+}
