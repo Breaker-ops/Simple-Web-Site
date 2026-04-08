@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+          
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="Guide-ApprenezHTML">
+                <h1 class="Guide-FrontEnd">
+                    <span class="Guide">Guide pour Créer un Site Web</span>
+                    <span class="Front-End">en Front-End</span>
+                </h1>
+                <h2 class="ApprenezHTML">
+                    Apprenez le HTML, CSS & JavaScript !
+                </h2>
+            </div>
+            <div class="ImageComputer">
+                <img src="{% static 'images/computer.png' %}" alt="Image indisponible">
+            </div>
+        </header>
+        <main>
+          {% block content %}
+          
+          {% endblock %}
+        </main>
+        <p style="color: black; text-align: center; margin-top: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic; font-weight: bold; margin-bottom: 30px;">
+            Bonne chance dans votre apprentissage du développement web!
+        </p>
+    </div>
+    <script src="{% static 'Js/script.js' %}"></script>
+</body>
+
+</html>
